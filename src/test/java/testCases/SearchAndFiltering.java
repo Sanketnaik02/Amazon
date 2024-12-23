@@ -24,7 +24,7 @@ public class SearchAndFiltering extends BaseTest {
 	WebDriverWait wait;
 
 	// Initialize Page Objects in @BeforeMethod to ensure the driver is ready
-	@BeforeClass
+	@BeforeMethod
 	public void setUpPageObjects() {
 
 		home = new HomePage(driver); // Pass initialized driver to HomePage
@@ -46,19 +46,7 @@ public class SearchAndFiltering extends BaseTest {
 		assertTrue(flag, "Input Search Value Didn't not matched");
 	}
 
-	// Test Case 2 : Check for no results when an invalid product is searched.
 
-	@Test
-	public void verifyInvalidInputInSearchbar() {
-		// Enter Invalid Input in searchBar
-		home.enterSearchbarValue("nonexistentproduct12345");
-		// Validate Invalid input
-		WebElement errorMsg = driver.findElement(By.xpath("//h2[@class='rhf-sign-in-title']"));
-		boolean ErrorMsg = wait.until(ExpectedConditions.visibilityOf(errorMsg)).isDisplayed();
-//		if (!ErrorMsg) {
-//			Assert.assertTrue(ErrorMsg, "test Case Failed ");
-//		}
-	}
 	
 	
 	

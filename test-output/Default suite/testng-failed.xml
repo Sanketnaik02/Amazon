@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.CartFuncationality">
+      <class name="testCases.SearchAndFiltering">
         <methods>
-          <include name="verifyProductQuantityAndPrice"/>
-          <include name="setupPageObject"/>
+          <include name="setUpPageObjects"/>
+          <include name="verifyValidInputInSearchbar"/>
           <include name="closeBrowser"/>
           <include name="broswerStart"/>
+          <include name="verifyInvalidInputInSearchbar"/>
         </methods>
-      </class> <!-- testCases.CartFuncationality -->
+      </class> <!-- testCases.SearchAndFiltering -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

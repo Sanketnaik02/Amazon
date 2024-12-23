@@ -5,17 +5,20 @@
     <classes>
       <class name="testCases.LoginAndRegistration">
         <methods>
-          <include name="validateUnregisteredUserCannotLogin"/>
           <include name="setUpPageObjects"/>
-          <include name="validateRegisteredUserSuccessfullyLogin"/>
-          <include name="validateUserLogOutFunction"/>
-          <include name="validatePasswordFieldTest"/>
           <include name="closeBrowser"/>
           <include name="broswerStart"/>
-          <include name="verifyNewUserCanRegisterWithValidData"/>
           <include name="validateErrorMessageForInvalidCredentials"/>
         </methods>
       </class> <!-- testCases.LoginAndRegistration -->
+      <class name="testCases.SearchAndFiltering">
+        <methods>
+          <include name="setUpPageObjects"/>
+          <include name="closeBrowser"/>
+          <include name="broswerStart"/>
+          <include name="verifyInvalidInputInSearchbar"/>
+        </methods>
+      </class> <!-- testCases.SearchAndFiltering -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

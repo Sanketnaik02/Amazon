@@ -1,17 +1,415 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="18" passed="16" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-12-17T20:23:16 IST" name="Default suite" finished-at="2024-12-17T20:23:18 IST" duration-ms="1597">
+  <suite started-at="2024-12-23T11:58:52 IST" name="Suite" finished-at="2024-12-23T12:06:20 IST" duration-ms="448129">
     <groups>
     </groups>
-    <test started-at="2024-12-17T20:23:16 IST" name="Default test" finished-at="2024-12-17T20:23:18 IST" duration-ms="1597">
-      <class name="testCases.Excel">
-        <test-method signature="excelData()[pri:0, instance:testCases.Excel@700fb871]" started-at="2024-12-17T20:23:16 IST" name="excelData" finished-at="2024-12-17T20:23:18 IST" duration-ms="1512" status="PASS">
+    <test started-at="2024-12-23T11:58:52 IST" name="Test" finished-at="2024-12-23T12:06:20 IST" duration-ms="448129">
+      <class name="testCases.SearchAndFiltering">
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.SearchAndFiltering@31f9b85e]" started-at="2024-12-23T12:01:04 IST" name="broswerStart" finished-at="2024-12-23T12:01:12 IST" duration-ms="8639" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- excelData -->
-      </class> <!-- testCases.Excel -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- broswerStart -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:testCases.SearchAndFiltering@31f9b85e]" started-at="2024-12-23T12:01:12 IST" name="setUpPageObjects" finished-at="2024-12-23T12:01:12 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="verifyInvalidInputInSearchbar()[pri:0, instance:testCases.SearchAndFiltering@31f9b85e]" started-at="2024-12-23T12:01:12 IST" name="verifyInvalidInputInSearchbar" finished-at="2024-12-23T12:01:22 IST" duration-ms="9727" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@class='rhf-sign-in-title']"}
+  (Session info: chrome=130.0.6723.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a4923a720e1d7852ff9aaeba93dcdec3, findElement {value=//h2[@class='rhf-sign-in-title'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\SANKET~1.NAI\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55132}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55132/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a4923a720e1d7852ff9aaeba93dcdec3]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[@class='rhf-sign-in-title']"}
+  (Session info: chrome=130.0.6723.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a4923a720e1d7852ff9aaeba93dcdec3, findElement {value=//h2[@class='rhf-sign-in-title'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\SANKET~1.NAI\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55132}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:55132/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a4923a720e1d7852ff9aaeba93dcdec3
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at testCases.SearchAndFiltering.verifyInvalidInputInSearchbar(SearchAndFiltering.java:56)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyInvalidInputInSearchbar -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.SearchAndFiltering@31f9b85e]" started-at="2024-12-23T12:01:22 IST" name="closeBrowser" finished-at="2024-12-23T12:01:24 IST" duration-ms="2199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.SearchAndFiltering@31f9b85e]" started-at="2024-12-23T12:01:24 IST" name="broswerStart" finished-at="2024-12-23T12:01:32 IST" duration-ms="7859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:testCases.SearchAndFiltering@31f9b85e]" started-at="2024-12-23T12:01:32 IST" name="setUpPageObjects" finished-at="2024-12-23T12:01:32 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="verifyValidInputInSearchbar()[pri:0, instance:testCases.SearchAndFiltering@31f9b85e]" started-at="2024-12-23T12:01:32 IST" name="verifyValidInputInSearchbar" finished-at="2024-12-23T12:01:38 IST" duration-ms="5741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidInputInSearchbar -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.SearchAndFiltering@31f9b85e]" started-at="2024-12-23T12:01:38 IST" name="closeBrowser" finished-at="2024-12-23T12:01:38 IST" duration-ms="349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testCases.SearchAndFiltering -->
+      <class name="testCases.LoginAndRegistration">
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:04:50 IST" name="broswerStart" finished-at="2024-12-23T12:05:01 IST" duration-ms="10312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:01 IST" name="setUpPageObjects" finished-at="2024-12-23T12:05:01 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="validateErrorMessageForInvalidCredentials()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:01 IST" name="validateErrorMessageForInvalidCredentials" finished-at="2024-12-23T12:05:09 IST" duration-ms="8521" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='auth-error-message-box']/div/h4[@class='a-alert-heading']"}
+  (Session info: chrome=130.0.6723.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29f1cb48ef7a402158cd36774e00290b, findElement {value=//div[@id='auth-error-message-box']/div/h4[@class='a-alert-heading'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\SANKET~1.NAI\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56992}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56992/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29f1cb48ef7a402158cd36774e00290b]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@id='auth-error-message-box']/div/h4[@class='a-alert-heading']"}
+  (Session info: chrome=130.0.6723.59)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29f1cb48ef7a402158cd36774e00290b, findElement {value=//div[@id='auth-error-message-box']/div/h4[@class='a-alert-heading'], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.59, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\SANKET~1.NAI\AppDa...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:56992}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:56992/devtoo..., se:cdpVersion: 130.0.6723.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29f1cb48ef7a402158cd36774e00290b
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy12.getText(Unknown Source)
+at pageObject.LoginPage.verifyErrorMessage(LoginPage.java:63)
+at testCases.LoginAndRegistration.validateErrorMessageForInvalidCredentials(LoginAndRegistration.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateErrorMessageForInvalidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:09 IST" name="closeBrowser" finished-at="2024-12-23T12:05:10 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:10 IST" name="broswerStart" finished-at="2024-12-23T12:05:16 IST" duration-ms="6479" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:16 IST" name="setUpPageObjects" finished-at="2024-12-23T12:05:16 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="validatePasswordFieldTest()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:16 IST" name="validatePasswordFieldTest" finished-at="2024-12-23T12:05:21 IST" duration-ms="4689" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePasswordFieldTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:21 IST" name="closeBrowser" finished-at="2024-12-23T12:05:21 IST" duration-ms="415" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:21 IST" name="broswerStart" finished-at="2024-12-23T12:05:31 IST" duration-ms="9611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method signature="validateRegisteredUserSuccessfullyLogin()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:31 IST" name="validateRegisteredUserSuccessfullyLogin" finished-at="2024-12-23T12:05:39 IST" duration-ms="8444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateRegisteredUserSuccessfullyLogin -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:31 IST" name="setUpPageObjects" finished-at="2024-12-23T12:05:31 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:39 IST" name="closeBrowser" finished-at="2024-12-23T12:05:40 IST" duration-ms="299" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:40 IST" name="broswerStart" finished-at="2024-12-23T12:05:45 IST" duration-ms="5846" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:45 IST" name="setUpPageObjects" finished-at="2024-12-23T12:05:45 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="validateUnregisteredUserCannotLogin()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:45 IST" name="validateUnregisteredUserCannotLogin" finished-at="2024-12-23T12:05:49 IST" duration-ms="3830" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUnregisteredUserCannotLogin -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:49 IST" name="closeBrowser" finished-at="2024-12-23T12:05:50 IST" duration-ms="368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:50 IST" name="broswerStart" finished-at="2024-12-23T12:05:56 IST" duration-ms="6157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method signature="validateUserLogOutFunction()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:56 IST" name="validateUserLogOutFunction" finished-at="2024-12-23T12:06:07 IST" duration-ms="10962" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateUserLogOutFunction -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:05:56 IST" name="setUpPageObjects" finished-at="2024-12-23T12:05:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:06:07 IST" name="closeBrowser" finished-at="2024-12-23T12:06:07 IST" duration-ms="341" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:06:07 IST" name="broswerStart" finished-at="2024-12-23T12:06:15 IST" duration-ms="8087" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method is-config="true" signature="setUpPageObjects()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:06:15 IST" name="setUpPageObjects" finished-at="2024-12-23T12:06:15 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpPageObjects -->
+        <test-method signature="verifyNewUserCanRegisterWithValidData()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:06:15 IST" name="verifyNewUserCanRegisterWithValidData" finished-at="2024-12-23T12:06:20 IST" duration-ms="4281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewUserCanRegisterWithValidData -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.LoginAndRegistration@10d68fcd]" started-at="2024-12-23T12:06:20 IST" name="closeBrowser" finished-at="2024-12-23T12:06:20 IST" duration-ms="419" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testCases.LoginAndRegistration -->
+      <class name="testCases.CartFuncationality">
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.CartFuncationality@d35dea7]" started-at="2024-12-23T11:58:52 IST" name="broswerStart" finished-at="2024-12-23T11:58:59 IST" duration-ms="6903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method is-config="true" signature="setupPageObject()[pri:0, instance:testCases.CartFuncationality@d35dea7]" started-at="2024-12-23T11:58:59 IST" name="setupPageObject" finished-at="2024-12-23T11:58:59 IST" duration-ms="213" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObject -->
+        <test-method signature="ValidateProductAddedToCart()[pri:0, instance:testCases.CartFuncationality@d35dea7]" started-at="2024-12-23T11:58:59 IST" name="ValidateProductAddedToCart" finished-at="2024-12-23T11:59:27 IST" duration-ms="27803" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateProductAddedToCart -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.CartFuncationality@d35dea7]" started-at="2024-12-23T11:59:27 IST" name="closeBrowser" finished-at="2024-12-23T11:59:27 IST" duration-ms="554" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.CartFuncationality@d35dea7]" started-at="2024-12-23T11:59:27 IST" name="broswerStart" finished-at="2024-12-23T11:59:33 IST" duration-ms="5914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method is-config="true" signature="setupPageObject()[pri:0, instance:testCases.CartFuncationality@d35dea7]" started-at="2024-12-23T11:59:33 IST" name="setupPageObject" finished-at="2024-12-23T11:59:33 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObject -->
+        <test-method signature="verifyProductQuantityAndPrice()[pri:0, instance:testCases.CartFuncationality@d35dea7]" started-at="2024-12-23T11:59:33 IST" name="verifyProductQuantityAndPrice" finished-at="2024-12-23T12:00:08 IST" duration-ms="34371" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductQuantityAndPrice -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.CartFuncationality@d35dea7]" started-at="2024-12-23T12:00:08 IST" name="closeBrowser" finished-at="2024-12-23T12:00:08 IST" duration-ms="445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.CartFuncationality@d35dea7]" started-at="2024-12-23T12:00:08 IST" name="broswerStart" finished-at="2024-12-23T12:00:15 IST" duration-ms="6422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method is-config="true" signature="setupPageObject()[pri:0, instance:testCases.CartFuncationality@d35dea7]" started-at="2024-12-23T12:00:15 IST" name="setupPageObject" finished-at="2024-12-23T12:00:15 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupPageObject -->
+        <test-method signature="verifyCartProductQuantity()[pri:1, instance:testCases.CartFuncationality@d35dea7]" started-at="2024-12-23T12:00:15 IST" name="verifyCartProductQuantity" finished-at="2024-12-23T12:01:03 IST" duration-ms="48418" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCartProductQuantity -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.CartFuncationality@d35dea7]" started-at="2024-12-23T12:01:03 IST" name="closeBrowser" finished-at="2024-12-23T12:01:04 IST" duration-ms="583" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testCases.CartFuncationality -->
+      <class name="testCases.ProductPageFunction">
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:01:38 IST" name="broswerStart" finished-at="2024-12-23T12:01:46 IST" duration-ms="7449" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method signature="verifyClickingProductOpenCorrectly()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:01:46 IST" name="verifyClickingProductOpenCorrectly" finished-at="2024-12-23T12:02:01 IST" duration-ms="14996" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyClickingProductOpenCorrectly -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:02:01 IST" name="closeBrowser" finished-at="2024-12-23T12:02:01 IST" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:02:01 IST" name="broswerStart" finished-at="2024-12-23T12:02:10 IST" duration-ms="8742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method signature="verifyPriceUpdateProduct()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:02:10 IST" name="verifyPriceUpdateProduct" finished-at="2024-12-23T12:02:40 IST" duration-ms="30043" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPriceUpdateProduct -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:02:40 IST" name="closeBrowser" finished-at="2024-12-23T12:02:40 IST" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:02:40 IST" name="broswerStart" finished-at="2024-12-23T12:02:47 IST" duration-ms="6529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method signature="verifyProductTitleImagePriceDescription()[pri:1, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:02:47 IST" name="verifyProductTitleImagePriceDescription" finished-at="2024-12-23T12:03:00 IST" duration-ms="12855" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductTitleImagePriceDescription -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:03:00 IST" name="closeBrowser" finished-at="2024-12-23T12:03:00 IST" duration-ms="523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:03:00 IST" name="broswerStart" finished-at="2024-12-23T12:03:06 IST" duration-ms="5875" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method signature="verifyMultipleProductImagesViewed()[pri:2, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:03:06 IST" name="verifyMultipleProductImagesViewed" finished-at="2024-12-23T12:03:30 IST" duration-ms="24381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMultipleProductImagesViewed -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:03:30 IST" name="closeBrowser" finished-at="2024-12-23T12:03:31 IST" duration-ms="483" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:03:31 IST" name="broswerStart" finished-at="2024-12-23T12:03:38 IST" duration-ms="7219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method signature="verifyUserZoomProductImage()[pri:3, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:03:38 IST" name="verifyUserZoomProductImage" finished-at="2024-12-23T12:03:56 IST" duration-ms="17511" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserZoomProductImage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:03:56 IST" name="closeBrowser" finished-at="2024-12-23T12:03:56 IST" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:03:56 IST" name="broswerStart" finished-at="2024-12-23T12:04:03 IST" duration-ms="6819" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method signature="verifyProductSpecifications()[pri:4, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:04:03 IST" name="verifyProductSpecifications" finished-at="2024-12-23T12:04:16 IST" duration-ms="13049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductSpecifications -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:04:16 IST" name="closeBrowser" finished-at="2024-12-23T12:04:16 IST" duration-ms="436" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="broswerStart()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:04:16 IST" name="broswerStart" finished-at="2024-12-23T12:04:23 IST" duration-ms="7085" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- broswerStart -->
+        <test-method signature="validateAddToCartBtn()[pri:5, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:04:23 IST" name="validateAddToCartBtn" finished-at="2024-12-23T12:04:50 IST" duration-ms="26495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateAddToCartBtn -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testCases.ProductPageFunction@424e1977]" started-at="2024-12-23T12:04:50 IST" name="closeBrowser" finished-at="2024-12-23T12:04:50 IST" duration-ms="508" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- testCases.ProductPageFunction -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
